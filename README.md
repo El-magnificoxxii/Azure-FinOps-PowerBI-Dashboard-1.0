@@ -75,3 +75,10 @@ DIVIDE(
 
 ## 📸 Screenshots
 
+![Azure FinOps Dashboard](dashboard/Azure.png)
+
+
+
+
+
+
