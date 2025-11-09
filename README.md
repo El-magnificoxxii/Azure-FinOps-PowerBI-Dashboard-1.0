@@ -39,30 +39,6 @@ The goal of this project is to:
 
 ---
 
-## ⚙️ DAX Measures
-A few sample DAX formulas used in this report:
-
-```DAX
-Total Cost = SUM(Usage[BillingPreTax])
-
-Resource Count = DISTINCTCOUNT(Usage[MeterID])
-
-Cost per Service = DIVIDE([Total Cost], [Resource Count], 0)
-
-% of Total Cost =
-DIVIDE(
-    [Total Cost],
-    CALCULATE([Total Cost], ALL(Usage)),
-    0
-)
-
-% of Service Cost =
-DIVIDE(
-    [Total Cost],
-    CALCULATE([Total Cost], ALLEXCEPT(Usage, Usage[ServiceName])),
-    0
-)
-```
 ## 📊 Dashboard Overview
 | Visual                        | Description                                                      |
 | ----------------------------- | ---------------------------------------------------------------- |
