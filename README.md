@@ -71,14 +71,32 @@ DIVIDE(
     0
 )
 ```
+## 📊 Dashboard Overview
+| Visual                        | Description                                                      |
+| ----------------------------- | ---------------------------------------------------------------- |
+| 💰 **Daily Cost Trend**       | Displays total daily spend to track spending patterns.           |
+| 🧩 **Cost per Service**       | Shows each Azure service's contribution to total cost.           |
+| 🧱 **Average Cost per Resource** | Breaks down resource type cost (e.g., VM series, storage tiers). |
+| 🌍 **Usage by Region**        | Identifies regions with the highest consumption.                 |
+| 👥 **Top 5 Customers**        | Highlights customers driving the highest cloud cost.             |
 
 
 ## 📸 Screenshots
 
 ![Azure FinOps Dashboard](dashboard/Azure.png)
 
+## 📁 Download the Power BI file
+
+[Click here to download the .pbix file](dashboard/Azure%20FinOps%20Dashboard.pbix)
 
 
+
+## 🧰 Tools & Technologies
+
+- Power BI Desktop
+- Microsoft Azure Usage Data (CSV Export)
+- DAX
+- Power Query (Data Cleaning)
 
 
 
