@@ -20,10 +20,10 @@ The goal of this project is to:
 
 ## 🧠 Key Insights From the Dashboard
 1. **Top Services by Spend:** Identifies which Azure services (e.g., Virtual Machines, VPN Gateway, Storage) contribute most to total costs.  
-2. **Cost per Service:** Calculates cost efficiency by dividing total service cost by number of active resources.  
+2. **Cost per Service:** Calculates cost efficiency by dividing total cost of each service by the number of active resources within that service..  
 3. **Daily Cost Trend:** Tracks day-to-day fluctuations to reveal unusual cost spikes.  
 4. **Regional Usage:** Highlights which Azure regions drive the most consumption.  
-5. **Cost by Sub-Meter Category:** Breaks services (like VM series) into finer detail to analyze per-category performance.  
+5. **Average Cost per Resource:** Provides a detailed breakdown of services (e.g., VM series) to analyze cost performance by category and determine each category’s percentage of the total cost. 
 6. **Customer Spend Analysis:** Shows the top-spending customers for transparency and billing insight.
 
 ---
@@ -31,19 +31,11 @@ The goal of this project is to:
 ## 📊 Dashboard Features
 | Feature | Description |
 |----------|--------------|
-| **Dynamic Filters** | Customer, Meter Region, Date Range, and Service Type slicers for interactive analysis |
-| **Drill-down Capability** | Click on a service to see detailed cost by sub-meter category |
+| **Dynamic Filters** | Customer Name and Meter Region slicers for interactive analysis |
+| **Drill-down Capability** | Click on a service to see detailed average cost per resource |
 | **Responsive Layout** | Optimized for readability with grouped visuals and consistent formatting |
-| **KPI Cards** | Summarizes key metrics like total cost, total usage, and total resources |
+| **KPI Cards** | Summarizes key metrics like total usage and total resources |
 
----
-
-## 🧩 Data Model
-- **Usage Table:** Contains core CSP usage data (meter category, meter subcategory, usage date, billing pretax cost, etc.)
-- **Date Table:** Created for proper time intelligence calculations (charge start, charge end, usage date)
-- **Relationships:** 
-  - `Usage[UsageDate]` → `Date[Date]`
-  - `Usage[ServiceName]` → used for drill-down into subcategories
 
 ---
 
