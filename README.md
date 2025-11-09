@@ -48,6 +48,7 @@ The goal of this project is to:
 | 🌍 **Usage by Region**        | Identifies regions with the highest consumption.                 |
 | 👥 **Top 5 Customers**        | Highlights customers driving the highest cloud cost.             |
 
+---
 
 ## 📸 Screenshots
 
