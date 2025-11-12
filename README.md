@@ -58,9 +58,9 @@ This section describes the key visuals used in the dashboard and their purpose.
 
 | Visual Type | Purpose / Insight | Key Fields Used |
 |--------------|------------------|-----------------|
-| **Card** | **Daily Cost Trend**: Displays total Azure spend across all customers and total resources contributing to the spend  | BillingPreTaxTotal & Meter Id |
+| **Card** | **Total Monthly Cost & Total Resource Count** : Displays total Azure spend across all customers and total resources contributing to the spend  | BillingPreTaxTotal & Meter Id |
 | **Stacked Bar Chart** |  **Cost per Service**, **Top 5 Customers** & **Top 5 Region by Cost Contribution** : Shows *cost per resource by Meter Category*, *cost distribution by customer* and *cost distribution by region* respectively| CostperResource, MeterCategory, CustomerOrganisation, ResourceLocation |
-| **Line and Stacked Column Chart** | The line chart reveals monthly spending trends and potential anomalies, and the stacked column chart breaks down the top eight services driving daily costs for deeper visibility into cost contributors  | BillingPreTax, UsageDate, TotalDailySpend and MeterCategory |
+| **Line and Stacked Column Chart** | **Daily Cost Trend**: The line chart reveals monthly spending trends and potential anomalies, and the stacked column chart breaks down the top eight services driving daily costs for deeper visibility into cost contributors  | BillingPreTax, UsageDate, TotalDailySpend and MeterCategory |
 | **Table** | Displays a detailed breakdown by MeterSubCategory, highlighting total cost and cost per resource to identify high-cost service categories | MeterSubCategory, TotalCost, CostPerResource and % Share of Total Cost |
 | **Slicer (Filter)** | Enables interactive filtering by Customer and Meter Region | CustomerOrganisation and MeterRegion |
 
